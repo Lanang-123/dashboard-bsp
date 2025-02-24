@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Menu",
+    "isTitle": true
+  },
+  {
+    "name": "Dashboard",
+    "url": "dashboard",
+    "icon": "grid-fill"
+  },
+  {
+    "name": "Chat Activity",
+    "url": "conversation",
+    "icon": "chat-dots-fill"
+  },
+  {
+    "name": "AI Assisant",
+    "url": "dashboard",
+    "icon": "headset"
+  },
+  {
+    "name": "Feedback",
+    "url": "dashboard",
+    "icon": "people-fill"
+  }
+]

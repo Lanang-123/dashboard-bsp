@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ConversationController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [DashboardController::class,'index'])->name('dashboard');
+
+Route::prefix('/conversation')->group(function () {
+    Route::get('/',[ConversationController::class,'index'])->name('conversation');
+});
+
+Route::prefix('/message')->group(function () {
+    Route::get('/',[MessageController::class,'index'])->name('message');
 });
